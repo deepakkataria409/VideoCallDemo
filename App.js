@@ -18,6 +18,7 @@ import TenantComplaints from './src/tenant/TenantComplaints';
 import Notices from './src/tenant/Notices';
 import Profile from './src/tenant/Profile';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import AddPG from './src/owner/AddPG';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -29,6 +30,11 @@ function OwnerTabs() {
       <Tab.Screen name="PGs" component={PGList} />
       <Tab.Screen name="Tenants" component={Tenants} />
       <Tab.Screen name="Rent" component={RentCenter} />
+      <Tab.Screen name="Rooms" component={Rooms} />
+      <Tab.Screen name="Reports" component={Reports} />
+      <Tab.Screen name="Announcements" component={Announcements} />
+      <Tab.Screen name="Complaints" component={Complaints} />
+      <Tab.Screen name="AddPG" component={AddPG} />
       <Tab.Screen
         name="More"
         component={MoreOwnerStack}
