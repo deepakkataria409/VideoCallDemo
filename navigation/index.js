@@ -1,4 +1,6 @@
-import { registerRootComponent } from 'expo';
+// index.js (RN CLI)
+import { AppRegistry } from 'react-native';
 import App from './App';
+import { name as appName } from './app.json';
 
-registerRootComponent(App);
+AppRegistry.registerComponent(appName, () => App);
